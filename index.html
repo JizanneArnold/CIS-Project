@@ -1,64 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Jizanne Arnold's personal website">
-    <meta name="author" content="Jizanne Arnold">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Jizanne Arnold - Home</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+          content="Japan Diary: travel memories, favorite places, food, and personal travel notes.">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Japan Diary | Home</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
 
-
 <body>
-
     <header>
-        <h1>Jizanne Arnold</h1>
-
-        <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="school.html">School</a>
-    </nav>
+        <h1>Japan Diary<span>.</span></h1>
+        <p>A collection of places, little moments, and memories.</p>
     </header>
 
-<main>
-    <h2>About Me</h2>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="destinations.html">Places I Visited</a></li>
+            <li><a href="food.html">Food Diaries</a></li>
+            <li><a href="tips.html">Travel Notes</a></li>
+        </ul>
+    </nav>
 
-    <p>
-        Hello! My name is Jizanne Arnold, and I am currently studying Computer Information Systems.
-        I enjoy learning more about computers, technology, and web development.
-        In my free time, I like going to the gym and being active.
-        I also enjoy traveling and experiencing different cultures and trying new food.
-        One of my goals is to continue improving my technology skills and use them in my future career.
-    </p>
+    <main>
+        <section class="hero">
+            <h2>MY JAPAN DIARY</h2>
+            <p>
+                Little moments.<br>
+                Memories worth keeping.
+            </p>
+            <a class="button" href="destinations.html">
+                Open my diary &rarr;
+            </a>
+        </section>
 
-    <img src="images/japan.jpg" alt="Photo from my trip to Japan">
+        <div class="columns">
+            <section id="welcome">
+                <p class="eyebrow">A PERSONAL TRAVEL JOURNAL</p>
+                <h2>Japan, through my eyes</h2>
 
-    <img src="images/nara.jpg" alt="Photo from Nara, Japan">
-</main>
+                <p>
+                    Welcome to Japan Diary, a little space for
+                    collecting memories from my trip to Japan.
+                    This journal brings together photos, food,
+                    and travel notes that I want to remember.
+                </p>
 
-<aside>
-    <h2>My Hobbies</h2>
+                <h3>More than a destination</h3>
+                <p>
+                    Sometimes the smallest details become the
+                    memories we keep. This diary is a place for
+                    those details, from a quiet view to something
+                    delicious discovered along the way.
+                </p>
 
-    <ul>
-        <li>Go to the gym</li>
-        <li>Traveling</li>
-        <li>Gaming</li>
-    </ul>
-</aside>
+                <p>
+                    <a href="destinations.html">
+                        Browse my travel photos &rarr;
+                    </a>
+                </p>
 
-    <p>
-        My favorite website is
-        <a href="https://www.youtube.com/">YouTube</a> because it's diverse.
-    </p>
+                <h3>A few notes for your own journey</h3>
+                <p>
+                    Alongside my memories, I am collecting
+                    practical reminders for planning a trip.
+                    Visit Travel Notes for a checklist and
+                    a practice trip planning form.
+                </p>
 
-<footer>
-    <p>Last updated: October 5, 2026</p>
-    <p><a href="mailto:jizannearnold@gmail.com">Email Me</a></p>
-</footer>
+                <p>
+                    <a href="tips.html">Read my travel notes &rarr;</a>
+                </p>
+            </section>
 
+            <aside>
+                <p class="eyebrow">INSIDE THE DIARY</p>
+                <h2>Stay a little while</h2>
+                <ul>
+                    <li>
+                        <a href="destinations.html">
+                            Places I Visited &rarr;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="food.html">Food Diaries &rarr;</a>
+                    </li>
+                    <li>
+                        <a href="tips.html">Travel Notes &rarr;</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Japan Diary</p>
+        <p>A personal collection of travel memories.</p>
+        <p>Last updated: October 24, 2026</p>
+    </footer>
+</body>
 </html>

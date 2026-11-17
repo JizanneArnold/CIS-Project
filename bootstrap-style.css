@@ -1,0 +1,253 @@
+/* Personal website: nature-inspired Bootstrap theme */
+
+:root {
+    --site-ink: #25291f;
+    --site-olive: #465336;
+    --site-paper: #fafaf7;
+}
+
+/* Page */
+body.bg-light {
+    color: var(--site-ink);
+    background-color: var(--site-paper) !important;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    letter-spacing: -0.035em;
+}
+
+h2,
+h3 {
+    font-weight: normal;
+}
+
+main.container {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+/* Light navigation */
+nav.navbar.bg-dark {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e6e8df;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar .navbar-brand {
+    color: var(--site-ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: var(--site-olive);
+}
+
+.navbar .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    color: #555d4c;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+    color: var(--site-olive);
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+}
+
+/* Large photo header */
+header.bg-primary {
+    width: 94%;
+    max-width: 1320px;
+    margin: 1.25rem auto 0;
+    padding: clamp(3rem, 8vw, 7rem) 0 !important;
+    overflow: hidden;
+    border-radius: 28px;
+    background-color: var(--site-olive) !important;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(20, 29, 15, 0.78),
+            rgba(20, 29, 15, 0.35)
+        ),
+        url("images/japan.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header .container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+header h1 {
+    max-width: 12ch;
+    color: #ffffff;
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: normal !important;
+    line-height: 1.05;
+}
+
+header .text-uppercase {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+}
+
+header .lead {
+    max-width: 38rem;
+    margin-top: 1.5rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+/* Rounded buttons */
+.btn {
+    padding: 0.75rem 1.4rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-light {
+    color: var(--site-ink);
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-light:hover,
+.btn-light:focus {
+    color: var(--site-ink);
+    background-color: #e8eddc;
+    border-color: #e8eddc;
+}
+
+.btn-outline-primary,
+.btn-outline-dark {
+    color: var(--site-olive);
+    border-color: var(--site-olive);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+    color: #ffffff;
+    background-color: var(--site-olive);
+    border-color: var(--site-olive);
+}
+
+/* Cards */
+.card {
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.card.shadow-sm,
+section.shadow-sm {
+    box-shadow: 0 8px 24px rgba(37, 41, 31, 0.06) !important;
+}
+
+.card-body {
+    padding: 1.75rem !important;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+}
+
+.card .list-group-item {
+    color: var(--site-ink);
+    background-color: transparent;
+    border-color: #e7eadf;
+}
+
+/* Olive badges */
+.badge.text-bg-primary {
+    padding: 0.6em 0.9em;
+    color: #3d4a2d !important;
+    background-color: #e9efdf !important;
+    font-weight: 600;
+}
+
+/* Travel photos */
+figure.card .ratio {
+    overflow: hidden;
+}
+
+figure.card img {
+    transition: transform 0.4s ease;
+}
+
+figure.card:hover img {
+    transform: scale(1.03);
+}
+
+figcaption h3 {
+    font-size: 1.6rem;
+}
+
+.text-body-secondary {
+    color: #626959 !important;
+}
+
+/* Callout sections */
+main section.bg-white.rounded-3 {
+    border: 1px solid #e7eadf;
+    border-radius: 20px !important;
+    background-color: #f1f4eb !important;
+}
+
+/* Footer */
+footer.bg-dark {
+    color: #ffffff;
+    background-color: #303b26 !important;
+}
+
+footer a {
+    text-underline-offset: 0.25em;
+}
+
+/* Smaller screens */
+@media (max-width: 767px) {
+    header.bg-primary {
+        width: 94%;
+        border-radius: 20px;
+    }
+
+    header h1 {
+        font-size: clamp(2.7rem, 12vw, 4.5rem);
+    }
+
+    .navbar .nav-link {
+        padding-left: 0 !important;
+    }
+
+    main.container {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    figure.card img {
+        transition: none;
+    }
+
+    figure.card:hover img {
+        transform: none;
+    }
+}
